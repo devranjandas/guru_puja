@@ -55,38 +55,31 @@ function renderDevoteeSlotOptions() {
   });
 }
 
-function renderPanditSlotGrid() {
-  const grid = document.getElementById('pandit-slot-grid');
-  const countLabel = document.getElementById('slots-selected-count');
-  const MAX_SLOTS = 3;
+function renderPanditSlotDropdowns() {
+  const selects = Array.from(document.querySelectorAll('.pandit-slot-select'));
 
-  TIME_SLOTS.forEach((slot, index) => {
-    const wrapper = document.createElement('label');
-    wrapper.className = 'slot-option';
-
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.name = 'preferred_slots';
-    checkbox.value = slot;
-    checkbox.id = `pandit-slot-${index}`;
-
-    const span = document.createElement('span');
-    span.textContent = slot;
-
-    wrapper.appendChild(checkbox);
-    wrapper.appendChild(span);
-    grid.appendChild(wrapper);
-  });
-
-  grid.addEventListener('change', () => {
-    const checkboxes = grid.querySelectorAll('input[type="checkbox"]');
-    const checked = grid.querySelectorAll('input[type="checkbox"]:checked');
-    countLabel.textContent = checked.length;
-
-    checkboxes.forEach((box) => {
-      box.disabled = !box.checked && checked.length >= MAX_SLOTS;
+  // Populate every dropdown with the full list of hourly slots.
+  selects.forEach((select) => {
+    TIME_SLOTS.forEach((slot) => {
+      const option = document.createElement('option');
+      option.value = slot;
+      option.textContent = slot;
+      select.appendChild(option);
     });
   });
+
+  // Prevent the same slot being picked in more than one dropdown.
+  function refreshDisabledOptions() {
+    const chosen = selects.map((select) => select.value).filter(Boolean);
+    selects.forEach((select) => {
+      Array.from(select.options).forEach((option) => {
+        if (!option.value) return;
+        option.disabled = option.value !== select.value && chosen.includes(option.value);
+      });
+    });
+  }
+
+  selects.forEach((select) => select.addEventListener('change', refreshDisabledOptions));
 }
 
 function renderBookingsTable() {
@@ -103,6 +96,6 @@ function renderBookingsTable() {
 }
 
 renderDevoteeSlotOptions();
-renderPanditSlotGrid();
+renderPanditSlotDropdowns();
 renderCounter();
 renderBookingsTable();

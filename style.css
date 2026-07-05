@@ -209,6 +209,7 @@ h1, h2 {
 
 .card-form input[type="text"],
 .card-form input[type="tel"],
+.card-form input[type="email"],
 .card-form select,
 .card-form textarea {
   padding: 10px 12px;
@@ -232,6 +233,10 @@ h1, h2 {
   font-weight: 400;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.pandit-slot-select + .pandit-slot-select {
+  margin-top: 10px;
 }
 
 .slot-grid {
