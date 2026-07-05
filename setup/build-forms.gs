@@ -34,7 +34,6 @@ function buildGuruPujaForms() {
   devotee.setDescription(
     'Invite a Guru Puja Pandit to your home for a one-hour slot on Sunday, 19 July 2026, in Chembur.'
   );
-  devotee.setCollectEmail(true);
   devotee.addTextItem().setTitle('Full Name').setRequired(true);
   devotee.addTextItem().setTitle('Email ID').setRequired(true);
   devotee.addTextItem().setTitle('Mobile Number').setRequired(true);
@@ -50,20 +49,14 @@ function buildGuruPujaForms() {
   pandit.setDescription(
     'Offer to conduct Guru Pujas on Sunday, 19 July 2026, in Chembur. Choose up to 3 preferred hourly slots.'
   );
-  pandit.setCollectEmail(true);
   pandit.addTextItem().setTitle('Full Name').setRequired(true);
   pandit.addTextItem().setTitle('Email ID').setRequired(true);
   pandit.addTextItem().setTitle('Mobile Number').setRequired(true);
 
-  var slotItem = pandit.addCheckboxItem();
-  slotItem.setTitle('Preferred Slots (choose up to 3)')
-    .setChoiceValues(TIME_SLOTS)
-    .setRequired(true);
-  var atMostThree = FormApp.createCheckboxValidation()
-    .setHelpText('Please select at most 3 slots.')
-    .requireSelectAtMost(3)
-    .build();
-  slotItem.setValidation(atMostThree);
+  // Three dropdowns — Slot 1 required, Slots 2 & 3 optional (max 3 by design).
+  pandit.addListItem().setTitle('Preferred Slot 1').setChoiceValues(TIME_SLOTS).setRequired(true);
+  pandit.addListItem().setTitle('Preferred Slot 2 (optional)').setChoiceValues(TIME_SLOTS).setRequired(false);
+  pandit.addListItem().setTitle('Preferred Slot 3 (optional)').setChoiceValues(TIME_SLOTS).setRequired(false);
   pandit.setDestination(FormApp.DestinationType.SPREADSHEET, ssId);
 
   // ---- Output everything you need ----
