@@ -26,6 +26,7 @@ const TARGET_COUNT = 108;
 
 const bookings = [
   // { name: 'Devotee Name', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
+  { name: 'Sphruti Panchal', area: 'Tilak Nagar', slot: TIME_SLOTS[8], pandit: '' },
 ];
 
 function renderCounter() {
