@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>108 Guru Pujas — Chembur | Sunday 19 July 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">Art of Living &middot; Chembur</p>
+    <h1>108 Guru Pujas</h1>
+    <p class="hero-sub">A day of Guru Puja, offered in devotees' homes across Chembur</p>
+    <p class="hero-date">Sunday, 19 July 2026</p>
+    <div class="hero-cta">
+      <a href="#devotee-form" class="btn btn-primary">Host a Guru Puja at Home</a>
+      <a href="#pandit-form" class="btn btn-outline">I'm a Pandit — Offer a Slot</a>
+    </div>
+  </div>
+</header>
+
+<section class="counter-section">
+  <div class="container">
+    <div class="counter-card">
+      <p class="counter-label">Pujas Booked So Far</p>
+      <p class="counter-value"><span id="counter-current">0</span> / <span id="counter-target">108</span></p>
+      <p class="counter-note">Updated periodically by the event team</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <h2>About the Event</h2>
+    <p>
+      On Sunday, 19 July 2026, Art of Living Guru Puja Pandits will travel across Chembur to
+      conduct Guru Puja, one hour at a time, in the homes of devotees who wish to host it.
+      Slots run hourly from 7:00 AM to 10:00 PM. Let us know your preferred time below, and
+      our team will confirm your booking and assign a Pandit.
+    </p>
+  </div>
+</section>
+
+<section id="devotee-form" class="form-section">
+  <div class="container">
+    <h2>Devotee Interest Form</h2>
+    <p class="section-sub">Invite a Guru Puja Pandit to your home for a one-hour slot.</p>
+
+    <form action="https://formspree.io/f/xdevoteeplaceholder" method="POST" class="card-form">
+      <input type="hidden" name="_subject" value="New Guru Puja devotee interest — 108 Guru Pujas Chembur">
+
+      <label for="devotee-name">Full Name</label>
+      <input type="text" id="devotee-name" name="name" required>
+
+      <label for="devotee-mobile">Mobile Number</label>
+      <input type="tel" id="devotee-mobile" name="mobile" pattern="[0-9+ ]{10,15}" placeholder="e.g. 9876543210" required>
+
+      <label for="devotee-address">Address (in Chembur)</label>
+      <textarea id="devotee-address" name="address" rows="3" required></textarea>
+
+      <label for="devotee-slot">Preferred Time Slot</label>
+      <select id="devotee-slot" name="preferred_slot" required>
+        <option value="" disabled selected>Select a time slot</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">Submit Interest</button>
+    </form>
+  </div>
+</section>
+
+<section id="pandit-form" class="form-section alt-bg">
+  <div class="container">
+    <h2>Guru Puja Pandit Interest Form</h2>
+    <p class="section-sub">Offer to conduct Guru Pujas — choose up to 3 preferred hourly slots.</p>
+
+    <form action="https://formspree.io/f/xpanditplaceholder" method="POST" class="card-form">
+      <input type="hidden" name="_subject" value="New Guru Puja Pandit interest — 108 Guru Pujas Chembur">
+
+      <label for="pandit-name">Full Name</label>
+      <input type="text" id="pandit-name" name="name" required>
+
+      <label for="pandit-mobile">Mobile Number</label>
+      <input type="tel" id="pandit-mobile" name="mobile" pattern="[0-9+ ]{10,15}" placeholder="e.g. 9876543210" required>
+
+      <label>Preferred Slots <span class="slot-count-helper">(<span id="slots-selected-count">0</span> of 3 selected)</span></label>
+      <div id="pandit-slot-grid" class="slot-grid"></div>
+
+      <button type="submit" class="btn btn-primary">Submit Interest</button>
+    </form>
+  </div>
+</section>
+
+<section class="bookings-section">
+  <div class="container">
+    <h2>Confirmed Bookings</h2>
+    <p class="section-sub">Sample placeholder data — updated by the event team as bookings are confirmed.</p>
+
+    <div class="table-wrap">
+      <table id="bookings-table">
+        <thead>
+          <tr>
+            <th>Devotee Name</th>
+            <th>Address</th>
+            <th>Mobile Number</th>
+            <th>Time Slot</th>
+            <th>Guru Puja Pandit</th>
+          </tr>
+        </thead>
+        <tbody id="bookings-table-body"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>108 Guru Pujas &middot; Chembur &middot; Sunday 19 July 2026</p>
+    <p class="footer-small">Art of Living</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
