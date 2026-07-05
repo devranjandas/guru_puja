@@ -11,33 +11,21 @@ for (let hour = 7; hour < 22; hour++) {
   TIME_SLOTS.push(`${formatHour(hour)} – ${formatHour(hour + 1)}`);
 }
 
-// ---- Placeholder bookings data ----
-// Admins: add one object per confirmed booking. The live counter above
-// and the table below are both generated from this single array.
+// ---- Confirmed bookings data ----
+// Add one object per confirmed booking. The live counter above and the
+// table below are both generated from this single array (counter = length).
+//
+// Shape: { name, area, slot, pandit }
+//   - Only NON-SENSITIVE fields are stored here. This repo is public, so
+//     full home addresses and mobile numbers must NEVER be put in this file
+//     — keep those in the private Google Sheet only. Use just the locality
+//     for `area`.
+//   - Leave `pandit: ''` until a Guru Puja Pandit is assigned; it then shows
+//     as "To be assigned".
 const TARGET_COUNT = 108;
 
 const bookings = [
-  {
-    name: 'Placeholder Devotee 1',
-    address: 'Placeholder Address, Chembur',
-    mobile: '9XXXXXXXXX',
-    slot: TIME_SLOTS[0],
-    pandit: 'Placeholder Pandit Name'
-  },
-  {
-    name: 'Placeholder Devotee 2',
-    address: 'Placeholder Address, Chembur',
-    mobile: '9XXXXXXXXX',
-    slot: TIME_SLOTS[5],
-    pandit: 'Placeholder Pandit Name'
-  },
-  {
-    name: 'Placeholder Devotee 3',
-    address: 'Placeholder Address, Chembur',
-    mobile: '9XXXXXXXXX',
-    slot: TIME_SLOTS[10],
-    pandit: 'Placeholder Pandit Name'
-  }
+  // { name: 'Devotee Name', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
 ];
 
 function renderCounter() {
@@ -47,9 +35,21 @@ function renderCounter() {
 
 function renderBookingsTable() {
   const tbody = document.getElementById('bookings-table-body');
+
+  if (bookings.length === 0) {
+    const row = document.createElement('tr');
+    const cell = document.createElement('td');
+    cell.colSpan = 4;
+    cell.className = 'bookings-empty';
+    cell.textContent = 'No Guru Pujas confirmed yet — check back soon.';
+    row.appendChild(cell);
+    tbody.appendChild(row);
+    return;
+  }
+
   bookings.forEach((booking) => {
     const row = document.createElement('tr');
-    [booking.name, booking.address, booking.mobile, booking.slot, booking.pandit].forEach((value) => {
+    [booking.name, booking.area, booking.slot, booking.pandit || 'To be assigned'].forEach((value) => {
       const cell = document.createElement('td');
       cell.textContent = value;
       row.appendChild(cell);
