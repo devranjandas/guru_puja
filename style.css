@@ -32,10 +32,15 @@ h1, h2 {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--saffron) 0%, var(--saffron-dark) 100%);
+  position: relative;
+  background-image:
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.10) 0, rgba(255, 255, 255, 0.10) 1.5px, transparent 2px),
+    repeating-conic-gradient(from 0deg at 50% 40%, rgba(255, 255, 255, 0.06) 0deg 6deg, transparent 6deg 12deg),
+    linear-gradient(135deg, var(--saffron) 0%, var(--saffron-dark) 100%);
+  background-size: 28px 28px, cover, cover;
   color: var(--white);
   text-align: center;
-  padding: 64px 0 56px;
+  padding: 72px 0 60px;
 }
 
 .eyebrow {
@@ -57,13 +62,28 @@ h1, h2 {
   opacity: 0.95;
 }
 
+.hero-date-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--saffron-dark);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  padding: 8px 22px;
+  border-radius: 30px;
+  margin: 6px 0 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
 .hero-date {
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 28px;
+  opacity: 0.95;
 }
 
 .hero-cta {
+  position: relative;
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -95,6 +115,18 @@ h1, h2 {
   background: transparent;
   color: var(--white);
   border-color: var(--white);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: var(--white);
+}
+
+.btn-whatsapp:hover {
+  background: #1fb955;
 }
 
 /* Counter */
