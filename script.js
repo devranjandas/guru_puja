@@ -45,43 +45,6 @@ function renderCounter() {
   document.getElementById('counter-target').textContent = TARGET_COUNT;
 }
 
-function renderDevoteeSlotOptions() {
-  const select = document.getElementById('devotee-slot');
-  TIME_SLOTS.forEach((slot) => {
-    const option = document.createElement('option');
-    option.value = slot;
-    option.textContent = slot;
-    select.appendChild(option);
-  });
-}
-
-function renderPanditSlotDropdowns() {
-  const selects = Array.from(document.querySelectorAll('.pandit-slot-select'));
-
-  // Populate every dropdown with the full list of hourly slots.
-  selects.forEach((select) => {
-    TIME_SLOTS.forEach((slot) => {
-      const option = document.createElement('option');
-      option.value = slot;
-      option.textContent = slot;
-      select.appendChild(option);
-    });
-  });
-
-  // Prevent the same slot being picked in more than one dropdown.
-  function refreshDisabledOptions() {
-    const chosen = selects.map((select) => select.value).filter(Boolean);
-    selects.forEach((select) => {
-      Array.from(select.options).forEach((option) => {
-        if (!option.value) return;
-        option.disabled = option.value !== select.value && chosen.includes(option.value);
-      });
-    });
-  }
-
-  selects.forEach((select) => select.addEventListener('change', refreshDisabledOptions));
-}
-
 function renderBookingsTable() {
   const tbody = document.getElementById('bookings-table-body');
   bookings.forEach((booking) => {
@@ -95,7 +58,5 @@ function renderBookingsTable() {
   });
 }
 
-renderDevoteeSlotOptions();
-renderPanditSlotDropdowns();
 renderCounter();
 renderBookingsTable();
