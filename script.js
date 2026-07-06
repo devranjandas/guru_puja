@@ -28,6 +28,9 @@ const bookings = [
   // { name: 'Devotee Name', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
   { name: 'Sphruti Panchal', area: 'Tilak Nagar', slot: TIME_SLOTS[8], pandit: '' },
   { name: 'Smita Mukherjee', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Radhika Vaswani', area: 'Chembur', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Trupti Patil', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
+  { name: 'Punam Jain', area: 'Anushaktinagar', slot: TIME_SLOTS[9], pandit: '' },
 ];
 
 function renderCounter() {
