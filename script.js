@@ -31,6 +31,8 @@ const bookings = [
   { name: 'Radhika Vaswani', area: 'Chembur', slot: TIME_SLOTS[11], pandit: '' },
   { name: 'Trupti Patil', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
   { name: 'Punam Jain', area: 'Anushaktinagar', slot: TIME_SLOTS[9], pandit: '' },
+  { name: 'Kawaljit Kalsi', area: 'Govandi', slot: TIME_SLOTS[7], pandit: '' },
+  { name: 'Manmeet Kalsi', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
 ];
 
 function renderCounter() {
