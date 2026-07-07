@@ -33,6 +33,10 @@ const bookings = [
   { name: 'Punam Jain', area: 'Anushaktinagar', slot: TIME_SLOTS[9], pandit: '' },
   { name: 'Kawaljit Kalsi', area: 'Govandi', slot: TIME_SLOTS[7], pandit: '' },
   { name: 'Manmeet Kalsi', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Geeta Bhojwani', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
+  { name: 'Malti Rao', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
+  { name: 'Anvi Sawant', area: 'Govandi', slot: TIME_SLOTS[7], pandit: '' },
+  { name: 'Samir Kapadia', area: 'Sion', slot: TIME_SLOTS[5], pandit: '' },
 ];
 
 function renderCounter() {
