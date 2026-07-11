@@ -54,6 +54,7 @@ const bookings = [
   { name: 'Lata Nair', area: 'Chembur', slot: TIME_SLOTS[11], pandit: '' },
   { name: 'Pooja Rakhe', area: 'Deonar', slot: TIME_SLOTS[9], pandit: '' },
   { name: 'Alka Pisal', area: 'Kurla', slot: TIME_SLOTS[3], pandit: '' },
+  { name: 'Koshi Kothari', area: 'Tilak Nagar', slot: TIME_SLOTS[10], pandit: '' },
 ];
 
 function renderCounter() {
