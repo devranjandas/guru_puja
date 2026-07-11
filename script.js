@@ -52,6 +52,8 @@ const bookings = [
   { name: 'Vijayalakshmi V', area: 'Chembur', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Preeta Sehgal', area: 'Deonar', slot: TIME_SLOTS[11], pandit: '' },
   { name: 'Lata Nair', area: 'Chembur', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Pooja Rakhe', area: 'Deonar', slot: TIME_SLOTS[9], pandit: '' },
+  { name: 'Alka Pisal', area: 'Kurla', slot: TIME_SLOTS[3], pandit: '' },
 ];
 
 function renderCounter() {
