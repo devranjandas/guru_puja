@@ -41,6 +41,17 @@ const bookings = [
   { name: 'Khushboo Neema', area: 'Chembur', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Nitin Jain', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
   { name: 'Aruna Deokar', area: 'Tilak Nagar', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Lata Basak', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
+  { name: 'Meenakshi Ghosh', area: 'RCF', slot: TIME_SLOTS[10], pandit: '' },
+  { name: 'Punam Agaskar', area: 'Chunabhatti', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Reema Thakkar', area: 'Chembur', slot: TIME_SLOTS[7], pandit: '' },
+  { name: 'Bhushan Shelar', area: 'Chunabhatti', slot: TIME_SLOTS[3], pandit: '' },
+  { name: 'Vinaya V Shetty', area: 'Tilaknagar', slot: TIME_SLOTS[3], pandit: '' },
+  { name: 'Madhuri Bhatia', area: 'Tilak Nagar', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Karuna Patil', area: 'Deonar', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Vijayalakshmi V', area: 'Chembur', slot: TIME_SLOTS[3], pandit: '' },
+  { name: 'Preeta Sehgal', area: 'Deonar', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Lata Nair', area: 'Chembur', slot: TIME_SLOTS[11], pandit: '' },
 ];
 
 function renderCounter() {
