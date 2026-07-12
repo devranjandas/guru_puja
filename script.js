@@ -79,6 +79,7 @@ function renderBookingsTable() {
 
   bookings.forEach((booking) => {
     const row = document.createElement('tr');
+    if (booking.pandit) row.className = 'booking-assigned';
     [booking.name, booking.area, booking.slot, booking.pandit || 'To be assigned'].forEach((value) => {
       const cell = document.createElement('td');
       cell.textContent = value;
