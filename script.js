@@ -32,7 +32,7 @@ const bookings = [
   { name: 'Trupti Patil', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
   { name: 'Punam Jain', area: 'Anushaktinagar', slot: TIME_SLOTS[9], pandit: '' },
   { name: 'Kawaljit Kalsi', area: 'Govandi', slot: TIME_SLOTS[7], pandit: '' },
-  { name: 'Manmeet Kalsi', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Manmeet Kalsi', area: 'Chembur', slot: TIME_SLOTS[4], pandit: 'Dev Ranjan Das' },
   { name: 'Geeta Bhojwani', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
   { name: 'Malti Rao', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
   { name: 'Anvi Sawant', area: 'Govandi', slot: TIME_SLOTS[7], pandit: '' },
@@ -41,7 +41,7 @@ const bookings = [
   { name: 'Khushboo Neema', area: 'Chembur', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Nitin Jain', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
   { name: 'Aruna Deokar', area: 'Tilak Nagar', slot: TIME_SLOTS[11], pandit: '' },
-  { name: 'Lata Basak', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
+  { name: 'Lata Basak', area: 'Chembur', slot: TIME_SLOTS[10], pandit: 'Dev Ranjan Das' },
   { name: 'Meenakshi Ghosh', area: 'RCF', slot: TIME_SLOTS[10], pandit: '' },
   { name: 'Punam Agaskar', area: 'Chunabhatti', slot: TIME_SLOTS[4], pandit: '' },
   { name: 'Reema Thakkar', area: 'Chembur', slot: TIME_SLOTS[7], pandit: '' },
@@ -56,6 +56,7 @@ const bookings = [
   { name: 'Alka Pisal', area: 'Kurla', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Koshi Kothari', area: 'Tilak Nagar', slot: TIME_SLOTS[10], pandit: 'Koshi Kothari' },
   { name: 'Dev Ranjan Das', area: 'Anushaktinagar', slot: TIME_SLOTS[0], pandit: 'Dev Ranjan Das' },
+  { name: 'Pratima Singh', area: 'Anushaktinagar', slot: TIME_SLOTS[3], pandit: 'Pratima Singh' },
 ];
 
 function renderCounter() {
