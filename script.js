@@ -26,7 +26,7 @@ const TARGET_COUNT = 108;
 
 const bookings = [
   // { name: 'Devotee Name', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
-  { name: 'Sphruti Panchal', area: 'Tilak Nagar', slot: TIME_SLOTS[8], pandit: '' },
+  { name: 'Sphruti Panchal', area: 'Tilak Nagar', slot: TIME_SLOTS[8], pandit: 'Alka Pisal' },
   { name: 'Smita Mukherjee', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
   { name: 'Radhika Vaswani', area: 'Chembur', slot: TIME_SLOTS[11], pandit: 'Ankita Bagade' },
   { name: 'Trupti Patil', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
@@ -37,7 +37,7 @@ const bookings = [
   { name: 'Malti Rao', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
   { name: 'Anvi Sawant', area: 'Govandi', slot: TIME_SLOTS[7], pandit: '' },
   { name: 'Samir Kapadia', area: 'Sion', slot: TIME_SLOTS[5], pandit: 'Koshi Kothari' },
-  { name: 'Anvi Sawant', area: 'Tilaknagar', slot: TIME_SLOTS[12], pandit: '' },
+  { name: 'Anvi Sawant', area: 'Tilaknagar', slot: TIME_SLOTS[12], pandit: 'Ankita Bagade' },
   { name: 'Khushboo Neema', area: 'Chembur', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Nitin Jain', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
   { name: 'Aruna Deokar', area: 'Tilak Nagar', slot: TIME_SLOTS[11], pandit: '' },
