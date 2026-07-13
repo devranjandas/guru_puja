@@ -57,6 +57,13 @@ const bookings = [
   { name: 'Koshi Kothari', area: 'Tilak Nagar', slot: TIME_SLOTS[10], pandit: 'Koshi Kothari' },
   { name: 'Dev Ranjan Das', area: 'Anushaktinagar', slot: TIME_SLOTS[0], pandit: 'Dev Ranjan Das' },
   { name: 'Pratima Singh', area: 'Anushaktinagar', slot: TIME_SLOTS[3], pandit: 'Pratima Singh' },
+  { name: 'Bela Mehra', area: 'Chheda Nagar', slot: TIME_SLOTS[8], pandit: '' },
+  { name: 'Meenambika K', area: 'Tilak Nagar', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Vidya Murali', area: 'Chembur', slot: TIME_SLOTS[2], pandit: '' },
+  { name: 'Mahadev Mandavkar', area: 'Tilak Nagar', slot: TIME_SLOTS[10], pandit: '' },
+  { name: 'M R Raghunathan', area: 'Chunnabhatti', slot: TIME_SLOTS[8], pandit: '' },
+  { name: 'Rajam Rajgopalan', area: 'Sion', slot: TIME_SLOTS[0], pandit: '' },
+  { name: 'Shanthi', area: 'Shell Colony', slot: TIME_SLOTS[11], pandit: '' },
 ];
 
 function renderCounter() {
