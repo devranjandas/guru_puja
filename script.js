@@ -64,6 +64,15 @@ const bookings = [
   { name: 'M R Raghunathan', area: 'Chunnabhatti', slot: TIME_SLOTS[8], pandit: '' },
   { name: 'Rajam Rajgopalan', area: 'Sion', slot: TIME_SLOTS[0], pandit: '' },
   { name: 'Shanthi', area: 'Shell Colony', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Pragati Bhardwaj', area: 'Chembur', slot: TIME_SLOTS[2], pandit: '' },
+  { name: 'Geeta Naganure', area: 'Chembur', slot: TIME_SLOTS[8], pandit: '' },
+  { name: 'Renu Deva', area: 'Chembur', slot: TIME_SLOTS[13], pandit: '' },
+  { name: 'Charu Sharma', area: 'HPCL Colony', slot: TIME_SLOTS[10], pandit: '' },
+  { name: 'Ninad Bhonsle', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Bhavna Chachra', area: 'Chunabhatti', slot: TIME_SLOTS[6], pandit: '' },
+  { name: 'Deepa Gala', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Khusbu Manek', area: 'Chembur', slot: TIME_SLOTS[9], pandit: '' },
+  { name: 'Sunanda Shanbag', area: 'Chunabhatti', slot: TIME_SLOTS[6], pandit: '' },
 ];
 
 function renderCounter() {
