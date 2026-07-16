@@ -26,7 +26,7 @@ const TARGET_COUNT = 108;
 
 const bookings = [
   // { name: 'Devotee Name', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
-  { name: 'Smita Mukherjee', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Smita Mukherjee', area: 'Chembur', slot: TIME_SLOTS[4], pandit: 'J P Nair' },
   { name: 'Radhika Vaswani', area: 'Chembur', slot: TIME_SLOTS[11], pandit: 'Ankita Bagade' },
   { name: 'Trupti Patil', area: 'Chembur', slot: TIME_SLOTS[12], pandit: 'Jyoti Serai' },
   { name: 'Punam Jain', area: 'Anushaktinagar', slot: TIME_SLOTS[9], pandit: 'Pratima Singh' },
@@ -38,8 +38,8 @@ const bookings = [
   { name: 'Samir Kapadia', area: 'Sion', slot: TIME_SLOTS[5], pandit: 'Koshi Kothari' },
   { name: 'Anvi Sawant', area: 'Tilaknagar', slot: TIME_SLOTS[12], pandit: 'Ankita Bagade' },
   { name: 'Khushboo Neema', area: 'Chembur', slot: TIME_SLOTS[3], pandit: 'Seema Wadhwa' },
-  { name: 'Nitin Jain', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
-  { name: 'Aruna Deokar', area: 'Tilak Nagar', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Nitin Jain', area: 'Chembur', slot: TIME_SLOTS[10], pandit: 'Alka Pisal' },
+  { name: 'Aruna Deokar', area: 'Tilak Nagar', slot: TIME_SLOTS[11], pandit: 'Sadashiv Naganure' },
   { name: 'Lata Basak', area: 'Chembur', slot: TIME_SLOTS[10], pandit: 'Dev Ranjan Das' },
   { name: 'Meenakshi Ghosh', area: 'RCF', slot: TIME_SLOTS[10], pandit: '' },
   { name: 'Punam Agaskar', area: 'Chunabhatti', slot: TIME_SLOTS[4], pandit: 'Koshi Kothari' },
