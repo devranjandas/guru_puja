@@ -26,7 +26,6 @@ const TARGET_COUNT = 108;
 
 const bookings = [
   // { name: 'Devotee Name', area: 'Chembur', slot: TIME_SLOTS[0], pandit: '' },
-  { name: 'Sphruti Panchal', area: 'Tilak Nagar', slot: TIME_SLOTS[8], pandit: 'Alka Pisal' },
   { name: 'Smita Mukherjee', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
   { name: 'Radhika Vaswani', area: 'Chembur', slot: TIME_SLOTS[11], pandit: 'Ankita Bagade' },
   { name: 'Trupti Patil', area: 'Chembur', slot: TIME_SLOTS[12], pandit: 'Jyoti Serai' },
