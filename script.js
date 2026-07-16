@@ -85,6 +85,8 @@ const bookings = [
   { name: 'Smita Gupta', area: 'Shell Colony', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Kiran R', area: 'Chembur', slot: TIME_SLOTS[5], pandit: '' },
   { name: 'Sulakshana Mulik', area: 'Tilaknagar', slot: TIME_SLOTS[12], pandit: '' },
+  { name: 'Ankit Hundia', area: 'Chunnabhatti', slot: TIME_SLOTS[12], pandit: '' },
+  { name: 'Krupa Dalal', area: 'Tilaknagar', slot: TIME_SLOTS[2], pandit: '' },
 ];
 
 function renderCounter() {
