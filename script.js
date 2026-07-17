@@ -49,7 +49,7 @@ const bookings = [
   { name: 'Madhuri Bhatia', area: 'Tilak Nagar', slot: TIME_SLOTS[4], pandit: 'Madhuri Bhatia' },
   { name: 'Karuna Patil', area: 'Deonar', slot: TIME_SLOTS[4], pandit: 'Karuna Patil' },
   { name: 'Vijayalakshmi V', area: 'Chembur', slot: TIME_SLOTS[3], pandit: 'Vijayalakshmi Chellam' },
-  { name: 'Preeta Sehgal', area: 'Deonar', slot: TIME_SLOTS[11], pandit: '' },
+  { name: 'Preeta Sehgal', area: 'Deonar', slot: TIME_SLOTS[3], pandit: 'Dev Ranjan Das' },
   { name: 'Lata Nair', area: 'Chembur', slot: TIME_SLOTS[11], pandit: 'Lata Nair' },
   { name: 'Pooja Rakhe', area: 'Deonar', slot: TIME_SLOTS[9], pandit: 'Dev Ranjan Das' },
   { name: 'Alka Pisal', area: 'Kurla', slot: TIME_SLOTS[3], pandit: 'Alka Pisal' },
@@ -71,7 +71,7 @@ const bookings = [
   { name: 'Bhavna Chachra', area: 'Chunabhatti', slot: TIME_SLOTS[6], pandit: '' },
   { name: 'Deepa Gala', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
   { name: 'Khusbu Manek', area: 'Chembur', slot: TIME_SLOTS[9], pandit: '' },
-  { name: 'Sunanda Shanbag', area: 'Chunabhatti', slot: TIME_SLOTS[6], pandit: '' },
+  { name: 'Sunanda Shanbag', area: 'Chunabhatti', slot: TIME_SLOTS[6], pandit: 'Koshi Kothari' },
   { name: 'Shweta Ajwani', area: 'Chembur', slot: TIME_SLOTS[5], pandit: '' },
   { name: 'Satish Kumar', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
   { name: 'Kamini', area: 'Chembur', slot: TIME_SLOTS[5], pandit: '' },
@@ -80,13 +80,14 @@ const bookings = [
   { name: 'T Vijaylakshmi', area: 'Tilaknagar', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Surekha Shetty', area: 'Tilak Nagar', slot: TIME_SLOTS[3], pandit: 'Surekha Shetty' },
   { name: 'Radha Ravishekar', area: 'Chembur', slot: TIME_SLOTS[10], pandit: '' },
-  { name: 'J P Nair', area: 'Anushaktinagar', slot: TIME_SLOTS[3], pandit: '' },
+  { name: 'J P Nair', area: 'Anushaktinagar', slot: TIME_SLOTS[3], pandit: 'J P Nair' },
   { name: 'Smita Havnur', area: 'Chembur', slot: TIME_SLOTS[12], pandit: '' },
   { name: 'Smita Gupta', area: 'Shell Colony', slot: TIME_SLOTS[3], pandit: '' },
   { name: 'Kiran R', area: 'Chembur', slot: TIME_SLOTS[5], pandit: '' },
   { name: 'Sulakshana Mulik', area: 'Tilaknagar', slot: TIME_SLOTS[12], pandit: '' },
   { name: 'Ankit Hundia', area: 'Chunnabhatti', slot: TIME_SLOTS[12], pandit: '' },
   { name: 'Krupa Dalal', area: 'Tilaknagar', slot: TIME_SLOTS[2], pandit: '' },
+  { name: 'Radhika Chandle', area: 'RCF Colony', slot: TIME_SLOTS[3], pandit: 'Jayalakshmi Chandle' },
 ];
 
 function renderCounter() {
