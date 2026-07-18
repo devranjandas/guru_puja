@@ -111,6 +111,8 @@ const bookings = [
   { name: 'Nivedita', area: 'Shell Colony', slot: TIME_SLOTS[4], pandit: '' },
   { name: 'Shweta Tharani', area: 'Anushaktinagar', slot: TIME_SLOTS[9], pandit: '' },
   { name: 'Amit Singh', area: 'Shell Colony', slot: TIME_SLOTS[5], pandit: '' },
+  { name: 'Dimple', area: 'Chembur', slot: TIME_SLOTS[4], pandit: '' },
+  { name: 'Manoj Punjabi', area: 'Deonar', slot: TIME_SLOTS[0], pandit: '' },
 ];
 
 function renderCounter() {
