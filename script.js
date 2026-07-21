@@ -111,8 +111,6 @@ const bookings = [
   { name: 'Jyoti Gupta', area: 'Deonar', slot: '4:00 PM – 5:00 PM', pandit: 'Dev Ranjan Das' },
   { name: 'Saumitra trivedi', area: 'Anushaktinagar', slot: '10:00 AM – 11:00 AM', pandit: 'Saumitra trivedi' },
   { name: 'shweta Tharani', area: 'Anushaktinagar', slot: '4:00 PM – 5:00 PM', pandit: 'Saumitra trivedi' },
-  { name: 'Neema Kamdar', area: 'Mumbai', slot: '10:00 AM – 11:00 AM', pandit: 'Neema Kamdar' },
-  { name: 'Jaya Satumane', area: 'Tilak Nagar', slot: '10:00 AM – 11:00 AM', pandit: 'Jaya Satumane' },
   { name: 'Manoj Punjabi', area: 'Deonar', slot: '9:30 AM – 10:30 AM', pandit: 'sandip indap' },
   { name: 'Dimple Parmar', area: 'Chembur', slot: '11:00 AM – 12:00 PM', pandit: 'Renu Deva' },
   { name: 'Amit Singh', area: 'Shell Colony', slot: '12:00 PM – 1:00 PM', pandit: 'Dr. Rajni Singh' },
