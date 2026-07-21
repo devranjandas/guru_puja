@@ -152,9 +152,20 @@ const bookings = [
   { name: 'Uma Iyer', area: '', slot: '', pandit: 'Uma Iyer' },
 ];
 
+function uniquePandits() {
+  return [...new Set(bookings.map((b) => b.pandit).filter(Boolean))];
+}
+
 function renderCounter() {
   document.getElementById('counter-current').textContent = bookings.length;
-  document.getElementById('counter-target').textContent = TARGET_COUNT;
+  document.getElementById('pandit-count').textContent = uniquePandits().length;
+}
+
+function renderPanditNames() {
+  const el = document.getElementById('pandit-names');
+  if (!el) return;
+  const names = uniquePandits().sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+  el.textContent = names.join('  ·  ');
 }
 
 function renderBookingsTable() {
@@ -185,3 +196,4 @@ function renderBookingsTable() {
 
 renderCounter();
 renderBookingsTable();
+renderPanditNames();

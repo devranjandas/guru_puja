@@ -162,6 +162,44 @@ h1, h2 {
   color: var(--muted);
 }
 
+.stats-row {
+  display: flex;
+  gap: 24px 56px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Thank-you (event closed) */
+.thankyou-section {
+  background: var(--white);
+  padding: 48px 0 8px;
+  text-align: center;
+}
+
+.thankyou-section h2 {
+  margin-bottom: 12px;
+}
+
+.thankyou-note {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.pandit-names {
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--saffron-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-align: center;
+  line-height: 2;
+  color: var(--ink);
+  font-weight: 500;
+}
+
 /* About */
 .about-section {
   padding: 48px 0;
