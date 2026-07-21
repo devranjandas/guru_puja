@@ -143,6 +143,15 @@ const bookings = [
   { name: 'Shanti Subramanuim', area: 'Chembur', slot: '', pandit: 'Shanti Subramanium' },
   { name: 'Jairaj Mothers', area: 'Chembur', slot: '', pandit: 'Seema Wadhwa' },
   { name: 'Pranjali Kulkarni', area: 'RCF Colony', slot: '4:00 PM – 5:00 PM', pandit: 'Radhika Chandle' },
+  { name: 'Savitri Raman', area: 'Marol', slot: '', pandit: 'Savitri Raman' },
+  { name: 'Asha Mitra', area: 'Marol', slot: '', pandit: 'Asha Mitra' },
+  { name: 'Poornima', area: 'Marol', slot: '', pandit: 'Poornima' },
+  { name: 'Saroja Venkatraman', area: '', slot: '', pandit: 'Saroja Venkatraman' },
+  { name: 'Lalita Narayanan', area: '', slot: '', pandit: 'Lalita Narayanan' },
+  { name: 'Kavita Kejriwal', area: '', slot: '', pandit: 'Kavita Kejriwal' },
+  { name: 'Shubha Gopal', area: '', slot: '', pandit: 'Shubha Gopal' },
+  { name: 'Hemali Bhatia', area: 'Mulund', slot: '', pandit: 'Himali Bhatia' },
+  { name: 'Uma Iyer', area: '', slot: '', pandit: 'Uma Iyer' },
 ];
 
 function renderCounter() {
